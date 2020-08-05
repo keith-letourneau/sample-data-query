@@ -7,7 +7,7 @@ sac_housing = pd.read_csv (r'C:\Users\Desktop\Sacramentorealestatetransactions.c
 
 #set query conditions
 
-query = sac_housing[(sac_housing['price'] > 500000) & (sac_housing['city'] == 'SACRAMENTO')]
+query = sac_housing.query('city.str.contains("FOLSOM|SACRAMENTO") and price > 450000', engine='python')
 
 #save results to a new/seperate spreadsheet
 
