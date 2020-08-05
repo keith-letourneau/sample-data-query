@@ -1,7 +1,7 @@
 import pandas as pd 
 
 #open and read spreadsheet (update file path to wherever you saved the sample dataset)
-#note the 'price' column is designated as intergers in order to correctly filter 
+#note the 'price' column is designated as intergers in order to correctly met conditions
 
 sac_housing = pd.read_csv (r'C:\Users\Desktop\Sacramentorealestatetransactions.csv', dtype={'price':'int'})
 
